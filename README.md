@@ -9,18 +9,18 @@ Basic build of webpack that allows you to complile SASS and ES6 through babel an
 `yarn run production` Build minified files  
 
 # Add React
-yarn add react react-dom babel-preset-react --dev  
+1. yarn add react react-dom babel-preset-react --dev  
 
-add "react" to .babelrc presets  
+2. add "react" to .babelrc presets  
 
-Uncomment jsx loader in webpack.config.js  
+3. Uncomment jsx loader in webpack.config.js  
 
-Uncomment root div in index.html  
+4. Uncomment root div in index.html  
 
-Uncomment React imports and React render in index.js  
+5. Uncomment React imports and React render in index.js  
 
-Create source/app/App.jsx  
+6. Create source/app/App.jsx  
 
-?  
+7. ?  
 
-Profit  
+8. Profit  
