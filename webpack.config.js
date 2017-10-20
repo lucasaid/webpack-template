@@ -28,10 +28,10 @@ module.exports = {
       // },
       {
         test: /\.scss/,
-        use: ExtractTextWebpackPlugin.extract({
-          use: ['css-loader', 'sass-loader'],
+        use: ['css-hot-loader'].concat(ExtractTextWebpackPlugin.extract({
+          use: ['css-loader', 'sass-loader','postcss-loader'],
           fallback: 'style-loader'
-        })
+        }))
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
