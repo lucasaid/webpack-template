@@ -1,20 +1,32 @@
 {
   "name": "webpack-template",
+  "description": "Basic Webpack Template",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasaid/webpack-template.git"
+  },
+  "author": "Chris Lucas <christopher.lucas11@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucasaid/webpack-template/issues"
+  },
   "scripts": {
     "build": "webpack --progress",
     "server": "webpack --progress && webpack-dev-server -d --hot --config webpack.config.js --watch",
-    "production": "NODE_ENV=production webpack --progress"
+    "production": "NODE_ENV=production webpack --progress",
+    "commit": "git-cz"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
+    "commitizen": "^2.9.6",
     "css-hot-loader": "^1.3.2",
     "css-loader": "^0.28.7",
+    "cz-conventional-changelog": "^2.0.0",
     "extract-text-webpack-plugin": "^3.0.1",
     "file-loader": "^1.1.5",
     "image-webpack-loader": "^3.4.2",
@@ -26,5 +38,10 @@
     "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
