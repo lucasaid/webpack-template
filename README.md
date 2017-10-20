@@ -4,6 +4,10 @@ Basic build of webpack that allows you to complile SASS and ES6 through babel an
 # Setup  
 `yarn install`
 
+`yarn run build` Builds unminified files 
+`yarn run server` Runs webpack dev server with watch command 
+`yarn run production` Build minified files
+
 # Add React
 yarn add react react-dom babel-preset-react --dev  
 
