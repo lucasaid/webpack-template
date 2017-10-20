@@ -63,7 +63,9 @@ module.exports = {
     contentBase: path.resolve(__dirname, './public'),
     historyApiFallback: true,
     inline: true,
-    open: true
+    open: true,
+    port: 3090,
+    host: "0.0.0.0"
   },
   devtool: 'eval-source-map'
 }
