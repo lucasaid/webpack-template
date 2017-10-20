@@ -9,3 +9,6 @@
 
 # npm/yarn packages.
 /node_modules
+
+/public/index.js
+/public/styles.css
