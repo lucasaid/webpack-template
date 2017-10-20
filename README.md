@@ -13,13 +13,13 @@ Basic build of webpack that allows you to complile SASS and ES6 through babel an
 
 2. add "react" to .babelrc presets  
 
-3. Uncomment jsx loader in webpack.config.js  
+3. Uncomment jsx loader in `webpack.config.js`  
 
-4. Uncomment root div in index.html  
+4. Uncomment root div in `public/index.html`  
 
-5. Uncomment React imports and React render in index.js  
+5. Uncomment React imports and React render in `source/index.js`  
 
-6. Create source/app/App.jsx  
+6. Create `source/app/App.jsx`  
 
 7. ?  
 
