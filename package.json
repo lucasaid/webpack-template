@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "webpack --progress",
-    "server": "webpack --progress && webpack-dev-server -d --hot --config webpack.config.js --watch",
+    "server": "webpack-dashboard -- webpack-dev-server -d --hot --config webpack.config.js --watch",
     "production": "NODE_ENV=production webpack --progress",
     "commit": "git-cz"
   },
@@ -37,6 +37,7 @@
     "style-loader": "^0.19.0",
     "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
     "webpack": "^3.8.1",
+    "webpack-dashboard": "^1.0.0",
     "webpack-dev-server": "^2.9.2"
   },
   "config": {

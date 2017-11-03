@@ -6,6 +6,7 @@ const path = require('path');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssets = require('optimize-css-assets-webpack-plugin');
+const DashboardPlugin = require('webpack-dashboard/plugin');
 
 module.exports = {
   entry: './source/index.js',
@@ -57,7 +58,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextWebpackPlugin('styles.css')
+    new ExtractTextWebpackPlugin('styles.css'),
+    new DashboardPlugin(),
   ],
   devServer: {
     contentBase: path.resolve(__dirname, './public'),
