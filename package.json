@@ -14,7 +14,8 @@
   },
   "scripts": {
     "build": "webpack --progress",
-    "server": "webpack-dev-server -d --hot --config webpack.config.js --watch",
+    "start": "webpack-dev-server -d --hot --config webpack.config.js --watch",
+    "dash": "webpack-dashboard webpack-dev-server -d --hot --config webpack.config.js --watch",
     "production": "NODE_ENV=production webpack --progress",
     "commit": "git-cz"
   },
