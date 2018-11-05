@@ -2,7 +2,7 @@
     ./source/index.js
     which is the webpack entry file
 */
-import './assets/stylesheets/styles.scss';
+import "./assets/stylesheets/styles.scss"
 
 // React imports
 // import React from 'react';
